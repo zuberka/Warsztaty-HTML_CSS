@@ -7,21 +7,39 @@
 
 </head>
 <body>
-    <header class="container">
-        <div id="black-header">
-            <div class="logo">Sit <span>on</span> chair</div>
-            <nav>
-                <ul class="menu">
-                    <li>O firmie</li>
-                    <li>Galeria</li>
-                    <li>Kontakt</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="container">
+    <div id="black-header">
+        <div class="logo">Sit <span>on</span> chair</div>
+        <nav>
+            <ul class="menu">
+                <li class="drop-down">
+                    <a href="#">O firmie</a>
+                    <div class="drop-down-list">
+                        <span>Aktualności</span>
+                        <span>Nasz team</span>
+                        <span>Historia</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#galeria">Galeria</a>
+                </li>
+                <li>
+                    <a href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
     <section class="first-section">
         <div class="container">
             <artickle>
+                <div class="arrow-left">
+                    <a href="#left"><</a>
+                </div>
+                <div class="arrow-right">
+                    <a href="#right">></a>
+                </div>
                 <div class="article-left">
                     <div class="image-chair">
                         <img src="images/black_chair.png" width="600px"/>
@@ -29,9 +47,13 @@
                 </div>
                 <div class="article-right">
                     <h1 class="article-title">
-                        Sit <span><strong>on   </strong></span> our    <span><strong>chair</strong></span>
+                        Sit <span>on  </span> our <span>chair</span>
                     </h1>
-                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br> Suspendisse a pellentesque dui, non felis. Maecenas <br>malesuada elit lectus felis, malesuada ultricies. Curabitur et <br>ligula. Ut molestie a, ultricies porta urna.
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br> Suspendisse a pellentesque dui, non
+                        felis.
+                        Maecenas <br>malesuada elit lectus felis, malesuada ultricies. Curabitur et <br>ligula. Ut
+                        molestie
+                        a, ultricies porta urna.
                     </p>
                     <input type="button" id="button1" value="Zobacz więcej">
                 </div>
@@ -59,7 +81,10 @@
                     <div class="text-box">
                         <h2>Finds all inputs</h2>
                         <br>
-                        <p>Finds all inputs that are checked and highlight the next sibling span. Notice there is not change when clicking the checkboxes since no click events have been linked.</p>
+                        <br>
+                        <p>Finds all inputs that are checked and highlight the next sibling span. Notice there is not
+                            change
+                            when clicking the checkboxes since no click events have been linked.</p>
                         <br>
                         <p>Notice there is no clicking the checkboxes since no click events have been</p>
                     </div>
@@ -70,16 +95,88 @@
     </section>
     <section class="third-section">
         <div class="container">
-
+            <div class="section-title">Cennik</div>
+            <div class="first-label">
+                <div class="big-circle"></div>
+                <div class="small-circle"></div>
+                <h3>Basic Plan</h3>
+                <div class="price">
+                    <span class="price-number">85</span>
+                    <span class="price-number-top">99</span>
+                    <br>
+                    <span class="price-text">pln/msc</span>
+                </div>
+                <p class="label-text1">Zakup towaru + dowóz</p>
+                <p class="label-text2">Serwis</p>
+                <input class="label-button" type="button" value="Dołącz">
+            </div>
+            <div class="second-label">
+                <div class="big-circle"></div>
+                <div class="small-circle"></div>
+                <h3>Standard plan</h3>
+                <div class="price">
+                    <span class="price-number">95</span>
+                    <span class="price-number-top">99</span>
+                    <br>
+                    <span class="price-text">pln/msc</span>
+                </div>
+                <p class="label-text1">Zakup towaru + dowóz</p>
+                <p class="label-text2">Serwis</p>
+                <p class="label-text3">Gwarancja 5 lat</p>
+                <input class="label-button" type="button" value="Dołącz">
+            </div>
+            <div class='third-label'>
+                <div class="big-circle"></div>
+                <div class="small-circle"></div>
+                <h3>Adwance plan</h3>
+                <div class="price">
+                    <span class="price-number">221</span>
+                    <span class="price-number-top">00</span>
+                    <br>
+                    <span class="price-text">pln/msc</span>
+                </div>
+                <p class="label-text1">Zakup towaru + dowóz</p>
+                <p class="label-text2">Serwis</p>
+                <p class="label-text3">Gwarancja 6 lat</p>
+                <p class="label-text4">Porady projektanta</p>
+                <input class="label-button" type="button" value="Dołącz">
+            </div>
         </div>
     </section>
-    <footer>
+    <section class="form-section">
         <div class="container">
+            <div class="section-title">Kontakt</div>
+            <form>
+                <input class="form_1" type="text" name="name" placeholder="Imię"/>
+                <img class="form-picture" src="images/red_chair.png" width="264" height="210" alt="red-chair"/>
+                <input class="form_2" type="text" placeholder="email" name="email"/>
+                <textarea class="form_3" rows="4" cols="50" placeholder="Wiadomość" name="message"></textarea>
+                <div class="user-agree">
+                    <div id="checkbox-position">
+                        <input type='checkbox' checked="checked" name='agree' id="form-box"/>
+                        <div class="label-box">
+                            <label for="form-box">Zgadzam się na przetwarzanie &nbsp; &nbsp; danych osobowych'</label>
+                        </div>
+                        <span class="checkmark"></span>
 
+                    </div>
+                </div>
+                <input class="form-btn" type="submit" value="WYŚLIJ"/>
+            </form>
         </div>
-
-    </footer>
-
-
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-logo">
+            <img src="images/flickr.png" width="35" height="35" alt="flickr"/>
+            <img src="images/vimeo.png" width="35" height="35" alt="vimeo"/>
+            <img src="images/pinterest.png" width="35" height="35" alt="pinterest"/>
+            <img src="images/twitter.png" width="35" height="35" alt="twitter"/>
+            <span>SIT <strong>ON</strong> CHAIR</span>
+        </div>
+        <p class="footer-text">Copyright 2014 | All Right Reserved. - Sit On Chair</p>
+    </div>
+</footer>
 </body>
 </html>
