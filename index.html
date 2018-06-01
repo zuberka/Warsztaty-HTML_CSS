@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>Warsztaty_HTML_CSS</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
 
 </head>
 <body>
-<header class="container">
-    <div id="black-header">
+<header class="section-header">
+    <div class="container">
         <div class="logo">Sit <span>on</span> chair</div>
         <nav>
-            <ul class="menu">
-                <li class="drop-down">
-                    <a href="#">O firmie</a>
-                    <div class="drop-down-list">
-                        <span>Aktualności</span>
-                        <span>Nasz team</span>
-                        <span>Historia</span>
-                    </div>
+            <ul>
+                <li class="dropdown">O firmie
+                    <ul class="dropdown-content">
+                        <li>Aktualnosci</li>
+                        <li>Nasz team</li>
+                        <li>Historia</li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#galeria">Galeria</a>
@@ -35,15 +35,26 @@
         <div class="container">
             <artickle>
                 <div class="arrow-left">
-                    <a href="#left"><</a>
+                    <a href="#left">&lt;</a>
                 </div>
                 <div class="arrow-right">
-                    <a href="#right">></a>
+                    <a href="#right">&gt;</a>
                 </div>
-                <div class="article-left">
-                    <div class="image-chair">
-                        <img src="images/black_chair.png" width="600px"/>
-                    </div>
+                <div class="article-left slider">
+
+                        <ul>
+                            <li class = visible>
+                                <img src="images/black_chair.png" width="600px"/>
+                            </li>
+                            <li>
+                                <img src="images/orange_chair.png" width="600px"/>
+                            </li>
+                            <li>
+                                <img src="images/red_chair.png"width="400px"/>
+                            </li>
+                        </ul>
+
+
                 </div>
                 <div class="article-right">
                     <h1 class="article-title">
